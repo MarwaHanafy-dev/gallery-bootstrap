@@ -1,0 +1,126 @@
+ /* Start Home */
+ #Home {
+    background-image: url(images/intro-bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.Home-Content {
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 50px;
+}
+.typingClass::after {
+    content: "Developer";
+    animation: disappear 2s steps(9) forwards, appear 2s steps(9) 2s forwards;
+    animation-iteration-count: infinite; /* تكرار لا نهائي */
+}
+@keyframes disappear {
+    0% { content: "Developer"; }
+    12.5% { content: "Develope"; }
+    25% { content: "Develop"; }
+    37.5% { content: "Develo"; }
+    50% { content: "Devel"; }
+    62.5% { content: "Deve"; }
+    75% { content: "Dev"; }
+    87.5% { content: "De"; }
+    100% { content: "D"; }
+}
+@keyframes appear {
+    0% { content: "D"; }
+    12.5% { content: "De"; }
+    25% { content: "Dev"; }
+    37.5% { content: "Deve"; }
+    50% { content: "Devel"; }
+    62.5% { content: "Develo"; }
+    75% { content: "Develop"; }
+    87.5% { content: "Develope"; }
+    100% { content: "Developer"; }
+}
+/* End Home */
+
+
+/* Start about  */
+#About{
+    background-color:#f5f5f5; 
+}
+.about-skill {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+h2{
+    position: relative; 
+}
+h2::after{
+    content:"";
+    width: 94px;
+    height: 3px;
+    background-color:rgb(70, 123, 192);
+    position: absolute;
+ bottom:0px;
+     left: 0;
+}
+/* End about  */
+
+/* Start Portofolio */
+#Portfolio{
+    background-color:#f5f5f5c3; 
+   
+}
+#Portfolio h3{
+    position: relative;
+}
+#Portfolio h3::after{
+    content:"";
+    width: 94px;
+    height: 3px;
+    background-color:rgb(70, 123, 192);
+    position: absolute;
+ bottom:0px;
+     left: 46%;
+}
+.card-body-icon{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+}
+.card {
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.card-img {
+    overflow: hidden; /* يمنع الصورة من الخروج خارج الإطار */
+}
+
+.card-img img {
+    transition: transform 1s ease-in-out;
+}
+
+.card-img img:hover {
+    transform: scale(1.1);
+}
+
+
+/* End Portofolio */
